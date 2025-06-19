@@ -1,6 +1,6 @@
 ### Xin chào, tôi là Tấn Sang 👋
 
-Tôi là một nhà phát triển phần mềm Full Stack đam mê đến từ Việt Nam, luôn tìm kiếm những thách thức mới và cơ hội để học hỏi. Với nền tảng vững chắc trong các thuật toán và cấu trúc dữ liệu, tôi thích xây dựng các ứng dụng mạnh mẽ và hiệu quả, đặc biệt trong các hệ thống phân tán.
+Tôi là một nhà phát triển phần mềm đến từ Việt Nam, luôn tìm kiếm những thách thức mới và cơ hội để học hỏi. Với nền tảng vững chắc trong các thuật toán và cấu trúc dữ liệu, tôi thích xây dựng các ứng dụng mạnh mẽ và hiệu quả, đặc biệt trong các hệ thống phân tán.
 
 🔭 Tôi hiện đang làm việc với các dự án Backend và Frontend.
 🌱 Tôi hiện đang tìm hiểu sâu hơn về kiến trúc hệ thống và Microservices.
