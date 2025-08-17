@@ -75,7 +75,6 @@ Dưới đây là các ngôn ngữ và công cụ mà tôi đã và đang sử d
 [![Tấn Sang's GitHub Stats](https://github-readme-stats.vercel.app/api?username=sangvirgo&show_icons=true&theme=dark&hide_title=true)](https://github.com/sangvirgo)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sangvirgo&layout=compact&theme=dark&hide_title=true)](https://github.com/sangvirgo)
 
-
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
@@ -88,6 +87,8 @@ Dưới đây là các ngôn ngữ và công cụ mà tôi đã và đang sử d
   <img alt="Breakout Game" src="images/breakout-light.svg" />
 </picture>
 
+### 🔥 GitHub Streak Stats
+![GitHub Streak](https://streak-stats.demolab.com/?user=sangvirgo&theme=dark&hide_border=true&stroke=0000&background=0D1117&ring=e05397&fire=e05397&currStreakLabel=e05397)
 ---
 
 ### 🔗 Kết nối với tôi
