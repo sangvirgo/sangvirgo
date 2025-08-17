@@ -88,7 +88,19 @@ Dưới đây là các ngôn ngữ và công cụ mà tôi đã và đang sử d
 </picture>
 
 ### 🔥 GitHub Streak Stats
-![GitHub Streak](https://streak-stats.demolab.com/?user=sangvirgo&theme=dark&hide_border=true&stroke=0000&background=0D1117&ring=e05397&fire=e05397&currStreakLabel=e05397)
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://streak-stats.demolab.com/?user=sangvirgo&theme=dark&hide_border=true&stroke=0000&background=0D1117&ring=e05397&fire=e05397&currStreakLabel=e05397"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://streak-stats.demolab.com/?user=sangvirgo&theme=default&hide_border=true"
+  />
+  <img alt="GitHub Streak" src="https://streak-stats.demolab.com/?user=sangvirgo&theme=default&hide_border=true" />
+</picture>
+
+
 ---
 
 ### 🔗 Kết nối với tôi
