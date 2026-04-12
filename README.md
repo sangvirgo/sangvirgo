@@ -129,9 +129,6 @@ Beyond local Docker Compose, I've deployed production workloads end-to-end:
 
 ## 🔥 GitHub Streak Stats
 
-[![Tấn Sang's GitHub Stats](https://github-readme-stats.vercel.app/api?username=sangvirgo&show_icons=true&theme=dark&hide_title=true)](https://github.com/sangvirgo)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sangvirgo&layout=compact&theme=dark&hide_title=true)](https://github.com/sangvirgo)
-
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
