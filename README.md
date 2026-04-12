@@ -130,8 +130,8 @@ Beyond local Docker Compose, I've deployed production workloads end-to-end:
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sangvirgo&show_icons=true&theme=dark&hide_title=true" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sangvirgo&layout=compact&theme=dark&hide_title=true" />
+  <img src="https://github-readme-stats.vercel.app/api?username=sangvirgo&show_icons=true&theme=dark&hide_title=true&cache_seconds=1800" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sangvirgo&layout=compact&theme=dark&hide_title=true&cache_seconds=1800" />
 </p>
 
 <p align="center">
