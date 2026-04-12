@@ -1,111 +1,148 @@
-### Xin chào, tôi là Tấn Sang 👋
+Nguyen Luu Tan Sang
 
-Tôi là một nhà phát triển phần mềm đến từ Việt Nam, luôn tìm kiếm những thách thức mới và cơ hội để học hỏi. Với nền tảng vững chắc trong các thuật toán và cấu trúc dữ liệu, tôi thích xây dựng các ứng dụng mạnh mẽ và hiệu quả, đặc biệt trong các hệ thống phân tán.
 
-🔭 Tôi hiện đang làm việc với các dự án Backend và Frontend.
-🌱 Tôi hiện đang tìm hiểu sâu hơn về kiến trúc hệ thống và Microservices.
-📫 Cách liên hệ với tôi: tansang06092004@gmail.com
+Backend Engineer · Java · Spring Boot · Microservices
 
----
 
-### 💻 Ngôn ngữ & Công cụ
 
-Dưới đây là các ngôn ngữ và công cụ mà tôi đã và đang sử dụng:
 
-**Ngôn ngữ lập trình:**
-<p align="left">
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Shell Script" />
-</p>
 
-**Frameworks & Thư viện:**
-<p align="left">
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/PyQt-41CD24?style=for-the-badge&logo=qt&logoColor=white" alt="PyQt5" />
-</p>
+  I build production-grade distributed systems — from microservice architecture and real-time geospatial engines to high-concurrency databases. My focus is on correctness under load, clean domain boundaries, and systems that scale.
 
-**Cơ sở dữ liệu:**
-<p align="left">
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-</p>
 
-**Công cụ & Môi trường phát triển:**
-<p align="left">
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
-  <img src="https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white" alt="IntelliJ IDEA" />
-  <img src="https://img.shields.io/badge/PyCharm-000000?style=for-the-badge&logo=pycharm&logoColor=white" alt="PyCharm" />
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-</p>
 
-**Các kỹ năng khác:**
-* Thuật toán & Cấu trúc dữ liệu
-* Phân tán hệ thống (Replica Set)
-* Tích hợp thanh toán (VNPAY)
-* Tích hợp OAuth (Google, GitHub Login)
-* Quản lý dự án
 
----
 
-### 🚀 Dự án Nổi bật
 
-Đây là một vài dự án mà tôi tự hào nhất. Bạn có thể tìm thấy thêm chi tiết và mã nguồn trong các repository tương ứng.
 
-* **Hệ thống Đặt Vé Xem Phim Trực Tuyến**
-    * **Công nghệ:** <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" /> <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot" /> <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" /> <img src="https://img.shields.io/badge/VNPAY-0099D6?style=for-the-badge&logo=vnpay&logoColor=white" alt="VNPAY" />
-    * **Mô tả:** Một ứng dụng full-stack cho phép đặt vé xem phim trực tuyến. Sử dụng **MongoDB** với **Replica Set** để phân tán dữ liệu và đảm bảo tính sẵn sàng của hệ thống. Backend phát triển với **Spring Boot** và Frontend với **React**. Tích hợp **VNPAY** cho các giao dịch thanh toán.
-    * **Backend Repo:** [https://github.com/cinema-Distributed-database/backend](https://github.com/cinema-Distributed-database/backend)
+  📍 Vietnam  |  📧 tansang06092004@gmail.com
 
-* **Hệ thống Bán Hàng Công Nghệ Trực Tuyến (Tech Shop)**
-    * **Công nghệ:** <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot" /> <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" /> <img src="https://img.shields.io/badge/VNPAY-0099D6?style=for-the-badge&logo=vnpay&logoColor=white" alt="VNPAY" /> <img src="https://img.shields.io/badge/Google-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Login" /> <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Login" />
-    * **Mô tả:** Nền tảng thương mại điện tử full-stack hỗ trợ các vai trò người mua, người bán và quản trị viên. Backend được xây dựng bằng **Spring Boot** và Frontend với **React**. Tích hợp thanh toán **VNPAY**. Hỗ trợ đăng nhập thông qua **Google** và **GitHub OAuth**. Tự động gửi email xác nhận khi hoàn tất giao dịch.
-    * **Backend Repo:** [https://github.com/WEBSITE-QU-N-LI-BAN-HANG-CONG-NGH/BACKEND](https://github.com/WEBSITE-QU-N-LI-BAN-HANG-CONG-NGH/BACKEND)
 
----
-
-### 📊 Thống kê GitHub của tôi
-
-[![Tấn Sang's GitHub Stats](https://github-readme-stats.vercel.app/api?username=sangvirgo&show_icons=true&theme=dark&hide_title=true)](https://github.com/sangvirgo)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sangvirgo&layout=compact&theme=dark&hide_title=true)](https://github.com/sangvirgo)
-
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="images/breakout-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="images/breakout-light.svg"
-  />
-  <img alt="Breakout Game" src="images/breakout-light.svg" />
-</picture>
-
-### 🔥 GitHub Streak Stats
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://streak-stats.demolab.com/?user=sangvirgo&theme=dark&hide_border=true&stroke=0000&background=0D1117&ring=e05397&fire=e05397&currStreakLabel=e05397"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://streak-stats.demolab.com/?user=sangvirgo&theme=default&hide_border=true"
-  />
-  <img alt="GitHub Streak" src="https://streak-stats.demolab.com/?user=sangvirgo&theme=default&hide_border=true" />
-</picture>
 
 
 ---
 
-### 🔗 Kết nối với tôi
-* **Email:** tansang06092004@gmail.com
+## 🛠️ Tech Stack
+
+**Languages:** Java (primary) · C++ · JavaScript · Python · Shell Script
+
+**Backend:** Spring Boot 3 · Spring Cloud (Eureka, Config, Gateway, OpenFeign) · Spring Security · Resilience4j
+
+**Databases:** PostgreSQL + PostGIS · MySQL 8 · MongoDB (Replica Set) · Redis
+
+**Payments & Auth:** VNPay · JWT · OAuth2 (Google, GitHub)
+
+**Infrastructure:** Docker · Docker Compose · Maven
+
+**Frontend:** React · Next.js · Tailwind CSS
+
+**Tools:** IntelliJ IDEA · Postman · Git · Grafana k6 (load testing)
 
 ---
 
-Cảm ơn bạn đã ghé thăm profile của tôi!
+## 🚀 Featured Projects
+
+---
+
+### 🎬 Cinestar — Distributed Cinema Booking System
+
+> **Core challenge:** Eliminate double-booking under extreme concurrent load without pessimistic locks.
+
+**[Backend Repo](https://github.com/cinema-Distributed-database/backend)**
+
+A fault-tolerant cinema ticketing platform engineered around a distributed MongoDB architecture, designed to maintain 99.9% uptime and guaranteed seat integrity during blockbuster releases.
+
+**Key Engineering Decisions:**
+- **Atomic Concurrency Control** — Replaced the naive "Read-Check-Write" pattern with a single MongoDB atomic update command (`findAndModify` with status validation), eliminating race conditions at the database level without locking overhead
+- **ACID Multi-Document Transactions** — Wrapped the full payment-to-seat-confirmation flow in a single Spring `@Transactional` scope: either the user is charged AND their seat is confirmed, or everything rolls back — no ghost bookings
+- **4-Node MongoDB Replica Set** — 1 Primary + 3 Secondaries with automatic leader election; Primary failure is recovered in seconds with zero manual intervention
+- **Read/Write Separation** — Routed 90% of read traffic (schedules, seat maps) to Secondary nodes via `secondaryPreferred`, keeping the Primary available for write-critical transactions
+- **Soft-Lock Expiry Sweeper** — `@Scheduled` job releases `HOLDING` seats not paid within 5 minutes, maintaining high seat pool turnover
+- **2dsphere Geospatial Index** — Efficient "Nearby Cinema" discovery powered by MongoDB's native geo-indexing
+- **Embedded Document Pattern** — Full seat maps stored within each `Showtime` document for O(1) fetch of theater state in a single query
+
+**Stack:** Java 21 · Spring Boot 3.3 · MongoDB Replica Set · VNPay · Docker
+
+---
+
+### 🛒 SmartVN — E-Commerce Microservices Platform
+
+> **Core challenge:** Handle high product catalog traffic with near-zero latency under concurrent load.
+
+**[Backend Repo](https://github.com/sangvirgo/microservice-smartVN)**
+
+A production-grade cloud-native e-commerce backend, benchmarked under 100 concurrent virtual users with Grafana k6. Demonstrated **5.5× response time improvement** and **+26% throughput** gain from Redis caching.
+
+**Performance Benchmark (Grafana k6, 100 VUs):**
+
+| Metric | Without Cache | With Redis |
+|---|---|---|
+| Avg Response | 47.81 ms | 8.66 ms |
+| p95 Response | 172.88 ms | 19.11 ms |
+| Throughput | 196.8 req/s | 248.5 req/s |
+| Failure Rate | 0.02% | **0.00%** |
+
+**Key Engineering Decisions:**
+- **Redis Cache-Aside Strategy** — Applied at the highest-traffic service (Product Service): `productDetail` TTL 10 min, `categories` TTL 1 hr, with automatic `@CacheEvict` on write
+- **Cache bypass flag** — `getProductDetail(id, bypassCache)` allows admin/internal calls to skip cache for consistency-critical reads
+- **Internal API Key auth** — Service-to-service calls (Admin → User/Product/Order) secured via `X-API-KEY` header, separated from user-facing JWT flows
+- **OAuth2 integration** — Google & GitHub login via Spring Security OAuth2, with OTP email verification for standard registration
+- **Resilience4j on Admin Service** — Circuit breaker + fallback on all aggregation Feign clients; admin dashboard degrades gracefully if a downstream service is slow
+- **AI Recommendation Pipeline** — User interactions (VIEW = 1.0, ADD_TO_CART = 2.0, PURCHASE = 3.0) exported via internal endpoints for offline recommendation model training
+- **Cloudinary media management** — Product image upload/management via Cloudinary SDK
+
+**Stack:** Java 21 · Spring Boot 3.3 · Spring Cloud · MySQL 8 · Redis 7 · VNPay · Docker Compose
+
+---
+
+### 🍔 QuickFood — Full-Stack Food Delivery Platform
+
+> **Core challenge:** Build a complete multi-role delivery ecosystem solo — from DB design to containerized deployment.
+
+**[Backend Repo](https://github.com/sangvirgo/quickfood)**
+
+An end-to-end food delivery platform mirroring UberEats/DoorDash core flows, developed entirely solo. Covers system architecture, backend microservices, real-time geospatial engine, and a multi-role frontend.
+
+**Key Engineering Decisions:**
+- **PostGIS Spatial Queries** — Real-time driver location tracking, distance calculation, and delivery radius validation powered by PostgreSQL + PostGIS extension
+- **Pessimistic Locking for Order Acceptance** — When N drivers simultaneously accept the same `WAITING` order, exactly one succeeds; all others receive a safe rejection — guaranteed by transactional pessimistic lock at the DB level
+- **Database-per-Service** — Core service owns `quickfood_core` (users, products, orders); Delivery service owns `quickfood_delivery` (shippers, shipments, PostGIS). No shared schema, no domain leakage
+- **Dynamic Service Discovery** — Netflix Eureka registry with Spring Cloud Gateway as the single JWT-verified entry point for all API traffic
+- **Multi-role Next.js Frontend** — Fully typed, responsive dashboards for Customers, Restaurant Staff, and Delivery Drivers
+- **One-command infrastructure** — `docker compose up --build -d` spins up both PostgreSQL/PostGIS instances, Eureka, API Gateway, Core Service, and Delivery Service
+
+**Stack:** Java 17 · Spring Boot 3 · Spring Cloud · PostgreSQL + PostGIS · Next.js · Docker Compose
+
+---
+
+## 📊 GitHub Stats
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+---
+
+
+
+
+  Open to backend engineering roles — distributed systems, high-concurrency, Java/Spring ecosystem.
+
+  tansang06092004@gmail.com
+
+
+
+  
