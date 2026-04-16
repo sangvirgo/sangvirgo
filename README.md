@@ -21,7 +21,7 @@
 
 **Payments & Auth:** VNPay · JWT · OAuth2 (Google, GitHub)
 
-**Infrastructure:** Docker · Docker Compose · Maven · DigitalOcean · Cloudflare (DNS, SSL, Proxy)
+**Infrastructure:** Docker · Docker Compose · Maven · GitHub Actions (CI/CD) · DigitalOcean · Cloudflare (DNS, SSL, Proxy)
 
 **OS:** Arch Linux (CachyOS) — daily driver
 
@@ -86,20 +86,20 @@ A production-grade cloud-native e-commerce backend, benchmarked under 100 concur
 
 ### 🍔 QuickFood — Full-Stack Food Delivery Platform
 
-> **Core challenge:** Build a complete multi-role delivery ecosystem solo — from DB design to containerized deployment.
-
-**[Backend Repo](https://github.com/sangvirgo/quickfood)**
-
-An end-to-end food delivery platform mirroring UberEats/DoorDash core flows, developed entirely solo. Covers system architecture, backend microservices, real-time geospatial engine, and a multi-role frontend.
-
+> **Core challenge:** Build a complete multi-role delivery ecosystem solo — from DB design to automated production deployment.
+ 
+**[Repo](https://github.com/sangvirgo/quickfood)** · **Live:** `http://165.227.147.13:3000`
+ 
+An end-to-end food delivery platform mirroring UberEats/DoorDash core flows, developed entirely solo. Covers system architecture, backend microservices, real-time geospatial engine, multi-role frontend, and a fully automated CI/CD pipeline.
+ 
 **Key Engineering Decisions:**
 - **PostGIS Spatial Engine** — Real-time driver location tracking, distance calculation, and delivery radius validation via PostgreSQL + PostGIS
 - **Pessimistic Locking for Order Acceptance** — When N drivers race to accept the same `WAITING` order, exactly one wins; all others get a safe rejection — enforced by DB-level transactional lock
 - **Database-per-Service** — Core owns `quickfood_core`; Delivery owns `quickfood_delivery` with PostGIS. No shared schema, no domain leakage
 - **Netflix Eureka + Spring Cloud Gateway** — Dynamic service discovery with a single JWT-verified entry point for all API traffic
-- **One-command infra** — `docker compose up --build -d` brings up all services including both PostgreSQL/PostGIS instances
-
-**Stack:** Java 17 · Spring Boot 3 · Spring Cloud · PostgreSQL + PostGIS · Next.js · Docker Compose
+- **GitHub Actions CI/CD Pipeline** — 2-stage pipeline (Build & Push → Deploy): automatically builds 5 Docker images with GHA layer caching, pushes to Docker Hub, then SSHs into the DigitalOcean droplet for a rolling restart. Health-aware startup ordering (`condition: service_healthy`) prevents container race conditions on cold boot — **18+ zero-touch deployments, 100% pass rate**
+- **One-command local infra** — `docker compose up --build -d` brings up all services including both PostgreSQL/PostGIS instances
+**Stack:** Java 17 · Spring Boot 3 · Spring Cloud · PostgreSQL + PostGIS · Next.js · Docker Compose · GitHub Actions · DigitalOcean
 
 ---
 
@@ -119,10 +119,10 @@ A machine learning project applying a hybrid **CNN + LSTM** architecture to netw
 ## 🏗️ Infrastructure & DevOps
 
 Beyond local Docker Compose, I've deployed production workloads end-to-end:
-
+ 
+- **GitHub Actions** — automated full CI/CD pipelines: multi-service Docker image builds with layer caching, Docker Hub push, and SSH-based rolling deploys to cloud VMs. 18+ successful production deployments on QuickFood with 100% pass rate
 - **DigitalOcean** — provisioned and managed Linux droplets for backend service hosting
 - **Cloudflare** — configured custom domains with DNS management, SSL/TLS termination, and reverse proxy for DDoS mitigation
-- **GitHub Actions** — set up basic CI/CD pipelines for automated build and deploy workflows
 - **Arch Linux (CachyOS)** — daily driver OS; comfortable with system-level configuration, package management (pacman/AUR), and Linux tooling
 
 ---
