@@ -1,153 +1,186 @@
-<h2 align="center">Nguyen Luu Tan Sang</h2>
-<h3 align="center">Backend Engineer · Java · Spring Boot · Microservices</h3>
+<h1 align="center">Nguyen Luu Tan Sang</h1>
+
+<h3 align="center">
+  Software Engineer · Backend-focused
+</h3>
 
 <p align="center">
-  I build production-grade distributed systems — from microservice architecture and real-time geospatial engines to high-concurrency databases. My focus is on correctness under load, clean domain boundaries, and systems that scale.
+  Java / Spring Boot · Node.js / TypeScript · REST APIs · Databases · Docker
 </p>
 
 <p align="center">
-  📍 Vietnam &nbsp;|&nbsp; 📧 tansang06092004@gmail.com
+  Final-year Information Technology student and Software Engineer Intern
+  with hands-on experience delivering business features for public-sector
+  digital platforms and citizen-facing applications.
 </p>
 
----
-
-## 🛠️ Tech Stack
-
-**Languages:** Java (primary) · C++ · Python · JavaScript · Shell Script
-
-**Backend:** Spring Boot 3 · Spring Cloud (Eureka, Config, Gateway, OpenFeign) · Spring Security · Resilience4j
-
-**Databases:** PostgreSQL + PostGIS · MySQL 8 · MongoDB (Replica Set) · Redis
-
-**Payments & Auth:** VNPay · JWT · OAuth2 (Google, GitHub)
-
-**Infrastructure:** Docker · Docker Compose · Maven · GitHub Actions (CI/CD) · DigitalOcean · Cloudflare (DNS, SSL, Proxy)
-
-**OS:** Arch Linux (CachyOS) — daily driver
-
-**Frontend:** React · Next.js · Tailwind CSS
-
-**Tools:** IntelliJ IDEA · Postman · Git · GitHub Actions (CI/CD) · Grafana k6
-
----
-
-## 🚀 Featured Projects
-
----
-
-### 🎬 Cinestar — Distributed Cinema Booking System
-
-> **Core challenge:** Eliminate double-booking under extreme concurrent load without pessimistic locks.
-
-**[Backend Repo](https://github.com/cinema-Distributed-database/backend)**
-
-A fault-tolerant cinema ticketing platform engineered around a distributed MongoDB architecture, designed to maintain 99.9% uptime and guaranteed seat integrity during blockbuster releases.
-
-**Key Engineering Decisions:**
-- **Atomic Concurrency Control** — Replaced the naive "Read-Check-Write" pattern with a single MongoDB atomic update command (`findAndModify` with status validation), eliminating race conditions at the database level without locking overhead
-- **ACID Multi-Document Transactions** — Wrapped the full payment-to-seat-confirmation flow in a single Spring `@Transactional` scope: either the user is charged AND their seat is confirmed, or everything rolls back — no ghost bookings
-- **4-Node MongoDB Replica Set** — 1 Primary + 3 Secondaries with automatic leader election; Primary failure is recovered in seconds with zero manual intervention
-- **Read/Write Separation** — Routed ~90% of read traffic (schedules, seat maps) to Secondary nodes via `secondaryPreferred`, keeping the Primary free for write-critical transactions
-- **Soft-Lock Expiry Sweeper** — `@Scheduled` job releases `HOLDING` seats not paid within 5 minutes, maintaining high seat pool turnover
-- **Embedded Document Pattern** — Full seat maps stored within each `Showtime` document for O(1) fetch of theater state in a single query
-- **2dsphere Geospatial Index** — Efficient "Nearby Cinema" discovery via MongoDB native geo-indexing
-
-**Stack:** Java 21 · Spring Boot 3.3 · MongoDB Replica Set · VNPay · Docker
-
----
-
-### 🛒 SmartVN — E-Commerce Microservices Platform
-
-> **Core challenge:** Handle high product catalog traffic with near-zero latency under concurrent load.
-
-**[Backend Repo](https://github.com/sangvirgo/microservice-smartVN)**
-
-A production-grade cloud-native e-commerce backend, benchmarked under 100 concurrent virtual users with Grafana k6. Demonstrated **5.5× response time improvement** and **+26% throughput** gain from Redis caching.
-
-**Performance Benchmark (Grafana k6, 100 VUs):**
-
-| Metric | Without Cache | With Redis |
-|---|---|---|
-| Avg Response | 47.81 ms | 8.66 ms |
-| p95 Response | 172.88 ms | 19.11 ms |
-| Throughput | 196.8 req/s | 248.5 req/s |
-| Failure Rate | 0.02% | **0.00%** |
-
-**Key Engineering Decisions:**
-- **Redis Cache-Aside Strategy** — `productDetail` TTL 10 min, `categories` TTL 1 hr, with automatic `@CacheEvict` on write; cache bypass flag for consistency-critical admin reads
-- **Internal API Key auth** — Service-to-service calls secured via `X-API-KEY` header, separated from user-facing JWT flows
-- **OAuth2 integration** — Google & GitHub login via Spring Security OAuth2, with OTP email verification for standard registration
-- **Resilience4j on Admin Service** — Circuit breaker + fallback on all aggregation Feign clients; dashboard degrades gracefully under downstream pressure
-- **AI Recommendation Pipeline** — User interactions (VIEW = 1.0, ADD_TO_CART = 2.0, PURCHASE = 3.0) exported for offline recommendation model training
-
-**Stack:** Java 21 · Spring Boot 3.3 · Spring Cloud · MySQL 8 · Redis 7 · VNPay · Docker Compose
-
----
-
-### 🍔 QuickFood — Full-Stack Food Delivery Platform
-
-> **Core challenge:** Build a complete multi-role delivery ecosystem solo — from DB design to automated production deployment.
- 
-**[Repo](https://github.com/sangvirgo/quickfood)** · **Live:** `http://165.227.147.13:3000`
- 
-An end-to-end food delivery platform mirroring UberEats/DoorDash core flows, developed entirely solo. Covers system architecture, backend microservices, real-time geospatial engine, multi-role frontend, and a fully automated CI/CD pipeline.
- 
-**Key Engineering Decisions:**
-- **PostGIS Spatial Engine** — Real-time driver location tracking, distance calculation, and delivery radius validation via PostgreSQL + PostGIS
-- **Pessimistic Locking for Order Acceptance** — When N drivers race to accept the same `WAITING` order, exactly one wins; all others get a safe rejection — enforced by DB-level transactional lock
-- **Database-per-Service** — Core owns `quickfood_core`; Delivery owns `quickfood_delivery` with PostGIS. No shared schema, no domain leakage
-- **Netflix Eureka + Spring Cloud Gateway** — Dynamic service discovery with a single JWT-verified entry point for all API traffic
-- **GitHub Actions CI/CD Pipeline** — 2-stage pipeline (Build & Push → Deploy): automatically builds 5 Docker images with GHA layer caching, pushes to Docker Hub, then SSHs into the DigitalOcean droplet for a rolling restart. Health-aware startup ordering (`condition: service_healthy`) prevents container race conditions on cold boot — **18+ zero-touch deployments, 100% pass rate**
-- **One-command local infra** — `docker compose up --build -d` brings up all services including both PostgreSQL/PostGIS instances
-**Stack:** Java 17 · Spring Boot 3 · Spring Cloud · PostgreSQL + PostGIS · Next.js · Docker Compose · GitHub Actions · DigitalOcean
-
----
-
-### 🧠 Network Intrusion Detection — CNN + LSTM
-
-> **Core challenge:** Detect network attacks in real time using deep learning on sequential traffic data.
-
-A machine learning project applying a hybrid **CNN + LSTM** architecture to network intrusion detection. CNNs extract local feature patterns from packet-level data; LSTM layers capture temporal dependencies across traffic sequences — enabling detection of attack patterns that evolve over time.
-
-- Applied on a real network traffic dataset; model classifies traffic as benign or attack across multiple attack categories
-- Demonstrates applied ML beyond standard web development — signal processing, time-series classification, deep learning pipeline
-
-**Stack:** Python · TensorFlow/Keras · CNN · LSTM
-
----
-
-## 🏗️ Infrastructure & DevOps
-
-Beyond local Docker Compose, I've deployed production workloads end-to-end:
- 
-- **GitHub Actions** — automated full CI/CD pipelines: multi-service Docker image builds with layer caching, Docker Hub push, and SSH-based rolling deploys to cloud VMs. 18+ successful production deployments on QuickFood with 100% pass rate
-- **DigitalOcean** — provisioned and managed Linux droplets for backend service hosting
-- **Cloudflare** — configured custom domains with DNS management, SSL/TLS termination, and reverse proxy for DDoS mitigation
-- **Arch Linux (CachyOS)** — daily driver OS; comfortable with system-level configuration, package management (pacman/AUR), and Linux tooling
-
----
-
-## 🔥 GitHub Streak Stats
-
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="images/breakout-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="images/breakout-light.svg"
-  />
-  <img alt="Breakout Game" src="images/breakout-light.svg" />
-</picture>
-
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=sangvirgo&theme=dark&hide_border=true&stroke=0000&background=0D1117&ring=e05397&fire=e05397&currStreakLabel=e05397" />
+  <a href="mailto:tansang06092004@gmail.com">Email</a>
+  ·
+  <a href="https://www.linkedin.com/in/sangvirgo">LinkedIn</a>
+  ·
+  <a href="https://sangvirgo.github.io">Portfolio</a>
 </p>
 
 ---
 
+## About Me
+
+- Final-year Information Technology student at the Posts and Telecommunications Institute of Technology.
+- Software Engineer Intern at MyAloha Technology JSC.
+- Interested in backend engineering, distributed workflows, authorization, databases, real-time systems, and containerized application delivery.
+- Currently developing projects with both **Java / Spring Boot** and **Node.js / TypeScript**.
+- Available for Software Engineer, Backend Engineer, and Full-Stack Engineer intern or fresher opportunities.
+
+---
+
+## Experience
+
+### MyAloha Technology JSC
+
+**Software Engineer Intern** · Mar 2026 – Present  
+Ho Chi Minh City, Vietnam
+
+- Analyse business requirements and coordinate with technical leads, product owners, QA engineers, and developers to deliver modules and workflow enhancements for public-sector digital platforms.
+- Develop and integrate REST API-backed features across citizen-facing Zalo Mini App experiences and administrative web systems, covering authorization, data-management workflows, file validation, and tenant- or department-scoped business rules.
+- Investigate frontend/backend integration defects and production issues, review existing data flows and source-code behaviour, and deliver focused fixes while supporting verification, documentation, and deployment activities.
+
+---
+
+## Technical Focus
+
+**Backend**
+
+`Java` · `Spring Boot` · `Node.js` · `TypeScript` · `Express.js` · `NestJS` · `REST APIs`
+
+**Data and Messaging**
+
+`PostgreSQL` · `MongoDB` · `Redis` · `RabbitMQ` · `BullMQ`
+
+**Frontend Collaboration**
+
+`React` · `Next.js` · `Vue 3`
+
+**Engineering Tools**
+
+`Docker` · `Docker Compose` · `GitHub Actions` · `Git` · `Linux` · `Nginx`
+
+> Supporting technologies are documented inside their relevant project repositories instead of being listed as primary skills.
+
+---
+
+## Featured Projects
+
+### BidFlow — Real-Time Auction Marketplace
+
+**Node.js / TypeScript · Personal Full-Stack Project**
+
+[Repository](https://github.com/sangvirgo/BidFlow)
+
+A real-time auction marketplace supporting bidder, seller, and administrator workflows across product management, auction moderation, bidding, payments, orders, disputes, and reports.
+
+- Implemented concurrency-safe and idempotent bid processing using MongoDB atomic updates and transactions.
+- Added Socket.IO synchronization, Redis/BullMQ scheduling, anti-sniping extensions, watchlists, and notifications.
+- Containerized the frontend, backend, MongoDB, and Redis with Docker Compose and Nginx.
+
+**Core stack:** Node.js · Express.js · React · TypeScript · MongoDB · Redis · BullMQ · Socket.IO · Docker
+
+---
+
+### QuickFood — Food Delivery Platform
+
+**Java / Spring Boot · Personal Full-Stack Project**
+
+[Repository](https://github.com/sangvirgo/quickfood)
+
+An end-to-end food delivery platform covering customer ordering, staff fulfilment, and shipper delivery workflows.
+
+- Developed Spring Boot REST APIs with PostgreSQL and PostGIS.
+- Built role-specific interfaces and implemented authentication and authorization workflows.
+- Configured Docker-based delivery and GitHub Actions workflows for repeatable deployment to AWS and DigitalOcean environments.
+
+**Core stack:** Java · Spring Boot · Spring Cloud · PostgreSQL/PostGIS · Next.js · Docker · GitHub Actions
+
+---
+
+### Secure Task and Document Management Platform
+
+**Node.js / TypeScript · Backend Developer · Team Project**
+
+A ten-service backend platform for organisational task assignment and secure document sharing.
+
+- Implemented task lifecycle, role-based access control, expiring permissions, cascade revocation, and hierarchical authorization.
+- Developed document versioning, time-limited download tickets, security workflows, notifications, and tamper-evident audit logging.
+- Integrated services through an API Gateway, RabbitMQ, Redis, PostgreSQL, Prisma, MinIO, and Docker Compose.
+
+**Core stack:** NestJS · TypeScript · PostgreSQL · Prisma · RabbitMQ · Redis · MinIO · Docker
+
+---
+
+### SmartVN — E-Commerce Microservices Platform
+
+**Java / Spring Boot · Personal Full-Stack Project**
+
+[Repository](https://github.com/sangvirgo/microservice-smartVN)
+
+An e-commerce microservices platform covering authentication, products, inventory, orders, payments, and administration.
+
+- Implemented Redis cache-aside and measured an approximately **5.5× faster average response time** in the documented k6 comparison.
+- Integrated OAuth2, JWT, OTP, VNPay, OpenFeign, Eureka service discovery, and Resilience4j fallbacks.
+- Built customer and administration interfaces using React and TypeScript.
+
+**Core stack:** Java · Spring Boot · Spring Cloud · MySQL · Redis · React · Docker
+
+---
+
+## Education
+
+### Posts and Telecommunications Institute of Technology
+
+**Bachelor of Science in Information Technology** · 2022 – 2027
+
+- GPA: **3.36 / 4.00**
+- Scholarships:
+  - Semester 1, AY 2024–2025
+  - Semester 2, AY 2024–2025
+  - Semester 1, AY 2025–2026
+
+---
+
+## Certification
+
+**TOEIC Listening & Reading — 810 / 990**  
+ETS
+
+---
+
+## Development Workflow
+
+I use **Claude Code**, **OpenAI Codex**, and **ChatGPT** to support repository investigation, implementation planning, debugging, code review, and technical documentation.
+
+AI-assisted tools support my workflow but do not replace technical understanding, source-code review, or manual verification.
+
+---
+
+## Current Interests
+
+- Backend engineering
+- REST API design
+- Authentication and authorization
+- Database transactions and concurrency
+- Real-time application workflows
+- Messaging and background jobs
+- Dockerized application delivery
+
+---
+
 <p align="center">
-  <i>Open to backend engineering roles — distributed systems, high-concurrency, Java/Spring ecosystem.</i><br/>
-  <b>tansang06092004@gmail.com</b>
+  Open to Software Engineer, Backend Engineer, and Full-Stack Engineer
+  intern or fresher opportunities.
+</p>
+
+<p align="center">
+  <a href="mailto:tansang06092004@gmail.com">
+    tansang06092004@gmail.com
+  </a>
 </p>
