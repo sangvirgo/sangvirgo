@@ -1,186 +1,218 @@
-<h1 align="center">Nguyen Luu Tan Sang</h1>
 
-<h3 align="center">
-  Software Engineer · Backend-focused
-</h3>
+<div align="center">
 
-<p align="center">
-  Java / Spring Boot · Node.js / TypeScript · REST APIs · Databases · Docker
-</p>
+# Nguyen Luu Tan Sang
 
-<p align="center">
-  Final-year Information Technology student and Software Engineer Intern
-  with hands-on experience delivering business features for public-sector
-  digital platforms and citizen-facing applications.
-</p>
+### Software Engineer | Backend-focused Full-stack Developer
 
-<p align="center">
-  <a href="mailto:tansang06092004@gmail.com">Email</a>
-  ·
-  <a href="https://www.linkedin.com/in/sangvirgo">LinkedIn</a>
-  ·
-  <a href="https://sangvirgo.github.io">Portfolio</a>
-</p>
+Building reliable backend systems, scalable web applications,
+and practical solutions for real-world business problems.
 
----
+**Java / Spring Boot · Node.js / TypeScript · React · Cloud & DevOps · AI-assisted Development**
 
-## About Me
+<br/>
 
-- Final-year Information Technology student at the Posts and Telecommunications Institute of Technology.
-- Software Engineer Intern at MyAloha Technology JSC.
-- Interested in backend engineering, distributed workflows, authorization, databases, real-time systems, and containerized application delivery.
-- Currently developing projects with both **Java / Spring Boot** and **Node.js / TypeScript**.
-- Available for Software Engineer, Backend Engineer, and Full-Stack Engineer intern or fresher opportunities.
+<a href="mailto:tansang.dev@gmail.com">
+  <img src="https://img.shields.io/badge/Email-334155?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+</a>
+<a href="https://linkedin.com/in/sangvirgo">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+<a href="https://sangvirgo.github.io">
+  <img src="https://img.shields.io/badge/Portfolio-334155?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/>
+</a>
+
+<br/><br/>
+
+📍 Ho Chi Minh City, Vietnam · 🎓 PTIT · 💻 Open to Software Engineering Opportunities
+
+</div>
 
 ---
 
-## Experience
+## 👨‍💻 About Me
 
-### MyAloha Technology JSC
+I'm a **Software Engineer** and Information Technology undergraduate at the **Posts and Telecommunications Institute of Technology (PTIT)**, with professional experience building full-stack web applications, internal management platforms, and data-driven business systems.
 
-**Software Engineer Intern** · Mar 2026 – Present  
-Ho Chi Minh City, Vietnam
+My primary interest is **backend engineering**, but I'm comfortable working across the entire application stack — from frontend interfaces and REST APIs to databases, integrations, and deployment workflows.
 
-- Analyse business requirements and coordinate with technical leads, product owners, QA engineers, and developers to deliver modules and workflow enhancements for public-sector digital platforms.
-- Develop and integrate REST API-backed features across citizen-facing Zalo Mini App experiences and administrative web systems, covering authorization, data-management workflows, file validation, and tenant- or department-scoped business rules.
-- Investigate frontend/backend integration defects and production issues, review existing data flows and source-code behaviour, and deliver focused fixes while supporting verification, documentation, and deployment activities.
+- 🏭 Developing an **ERP-style factory management platform** with modular business workflows.
+- 🌐 Building **Content Management Systems (CMS)**, web applications, and RESTful APIs.
+- ⚙️ Interested in distributed systems, database transactions, authorization, and asynchronous processing.
+- 🤖 Using **AI coding agents** to accelerate development while maintaining code quality through review and verification.
+- 🚀 Exploring cloud infrastructure, CI/CD, and reliable software delivery.
 
----
-
-## Technical Focus
-
-**Backend**
-
-`Java` · `Spring Boot` · `Node.js` · `TypeScript` · `Express.js` · `NestJS` · `REST APIs`
-
-**Data and Messaging**
-
-`PostgreSQL` · `MongoDB` · `Redis` · `RabbitMQ` · `BullMQ`
-
-**Frontend Collaboration**
-
-`React` · `Next.js` · `Vue 3`
-
-**Engineering Tools**
-
-`Docker` · `Docker Compose` · `GitHub Actions` · `Git` · `Linux` · `Nginx`
-
-> Supporting technologies are documented inside their relevant project repositories instead of being listed as primary skills.
+I enjoy turning complex requirements into maintainable software and continuously improving my engineering fundamentals.
 
 ---
 
-## Featured Projects
+## 🛠️ Tech Stack
 
-### BidFlow — Real-Time Auction Marketplace
+<div align="center">
 
-**Node.js / TypeScript · Personal Full-Stack Project**
+### Languages & Frameworks
 
-[Repository](https://github.com/sangvirgo/BidFlow)
+<img src="https://skillicons.dev/icons?i=java,spring,js,ts,nodejs,nestjs,express,react,nextjs&perline=9" alt="Languages and Frameworks"/>
 
-A real-time auction marketplace supporting bidder, seller, and administrator workflows across product management, auction moderation, bidding, payments, orders, disputes, and reports.
+### Databases & Messaging
 
-- Implemented concurrency-safe and idempotent bid processing using MongoDB atomic updates and transactions.
-- Added Socket.IO synchronization, Redis/BullMQ scheduling, anti-sniping extensions, watchlists, and notifications.
-- Containerized the frontend, backend, MongoDB, and Redis with Docker Compose and Nginx.
+<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,rabbitmq,prisma&perline=6" alt="Databases and Messaging"/>
 
-**Core stack:** Node.js · Express.js · React · TypeScript · MongoDB · Redis · BullMQ · Socket.IO · Docker
+### DevOps & Development Tools
 
----
+<img src="https://skillicons.dev/icons?i=docker,githubactions,git,linux,aws,cloudflare,nginx,postman&perline=8" alt="DevOps and Tools"/>
 
-### QuickFood — Food Delivery Platform
+</div>
 
-**Java / Spring Boot · Personal Full-Stack Project**
+### Engineering Knowledge
 
-[Repository](https://github.com/sangvirgo/quickfood)
+`RESTful APIs` · `Microservices` · `OOP` · `SOLID` · `Clean Code` · `JWT` · `RBAC` · `Transactions` · `Idempotency` · `Unit & Integration Testing` · `CI/CD`
 
-An end-to-end food delivery platform covering customer ordering, staff fulfilment, and shipper delivery workflows.
+### AI-assisted Development
 
-- Developed Spring Boot REST APIs with PostgreSQL and PostGIS.
-- Built role-specific interfaces and implemented authentication and authorization workflows.
-- Configured Docker-based delivery and GitHub Actions workflows for repeatable deployment to AWS and DigitalOcean environments.
+`Claude Code` · `OpenAI Codex` · `ChatGPT` · `AI Agents` · `Agent Skills (SKILL.md)` · `Model Context Protocol (MCP)`
 
-**Core stack:** Java · Spring Boot · Spring Cloud · PostgreSQL/PostGIS · Next.js · Docker · GitHub Actions
+I use AI-assisted development tools for repository exploration, implementation planning, coding, debugging, testing, and code review.
+
+**AI-generated code is reviewed, understood, and validated rather than accepted blindly.**
 
 ---
 
-### Secure Task and Document Management Platform
+## 💼 Professional Experience
 
-**Node.js / TypeScript · Backend Developer · Team Project**
+### Software Engineer — SimhiTech Technology JSC
 
-A ten-service backend platform for organisational task assignment and secure document sharing.
+**Aug 2026 – Present** · Ho Chi Minh City, Vietnam
 
-- Implemented task lifecycle, role-based access control, expiring permissions, cascade revocation, and hierarchical authorization.
-- Developed document versioning, time-limited download tickets, security workflows, notifications, and tamper-evident audit logging.
-- Integrated services through an API Gateway, RabbitMQ, Redis, PostgreSQL, Prisma, MinIO, and Docker Compose.
+Working on business applications and internal systems supporting factory operations and enterprise workflows.
 
-**Core stack:** NestJS · TypeScript · PostgreSQL · Prisma · RabbitMQ · Redis · MinIO · Docker
+- Develop and maintain a **modular, ERP-style factory management system** using React, Node.js REST APIs, and MSSQL, covering workforce operations, business workflows, dashboards, and reporting.
+- Build a **Content Management System (CMS)** for managing company news, services, products, and landing-page content.
+- Integrate **Zalo Bot and Zalo Official Account** for automated reporting, notifications, and department-based communication.
+- Work with Docker, CI/CD, API consolidation, caching/fallback mechanisms, and NAS-backed media synchronization with SHA-256 integrity checks and retry/backoff handling.
 
----
+### Software Engineer Intern — MyAloha Technology JSC
 
-### SmartVN — E-Commerce Microservices Platform
+**Mar 2026 – Aug 2026** · Ho Chi Minh City, Vietnam
 
-**Java / Spring Boot · Personal Full-Stack Project**
+Contributed to public-sector digital transformation platforms and citizen-facing applications.
 
-[Repository](https://github.com/sangvirgo/microservice-smartVN)
-
-An e-commerce microservices platform covering authentication, products, inventory, orders, payments, and administration.
-
-- Implemented Redis cache-aside and measured an approximately **5.5× faster average response time** in the documented k6 comparison.
-- Integrated OAuth2, JWT, OTP, VNPay, OpenFeign, Eureka service discovery, and Resilience4j fallbacks.
-- Built customer and administration interfaces using React and TypeScript.
-
-**Core stack:** Java · Spring Boot · Spring Cloud · MySQL · Redis · React · Docker
+- Developed and enhanced **50+ features and modules** for administrative workflows, reporting, data management, and business operations.
+- Built **Zalo Mini App** features integrating citizen-facing workflows with backend APIs and business data.
+- Improved data-intensive screens through **database aggregation, server-side pagination, and search**, reducing redundant API calls and unnecessary data fetching.
 
 ---
 
-## Education
+## 🚀 Featured Projects
 
-### Posts and Telecommunications Institute of Technology
+### 🛡️ [Secure Task — Task and Document Management Platform](https://github.com/sangvirgo/task-doc-microservices)
 
-**Bachelor of Science in Information Technology** · 2022 – 2027
+**NestJS · TypeScript · PostgreSQL · Prisma · RabbitMQ · Redis · MinIO · Docker**
 
-- GPA: **3.36 / 4.00**
-- Scholarships:
-  - Semester 1, AY 2024–2025
-  - Semester 2, AY 2024–2025
-  - Semester 1, AY 2025–2026
+A **10-service backend platform** designed for organizational task management, secure document sharing, and fine-grained access control.
+
+- Implemented hierarchical RBAC, task lifecycles, expiring permission grants, and cascade revocation.
+- Developed document versioning, time-limited download tickets, notifications, and tamper-evident audit logging.
+- Contributed to GitHub Actions CI/CD and Docker-based integration/E2E verification for an **AWS EC2 test environment**.
+
+**Focus:** Backend Architecture · Authorization · Distributed Workflows · CI/CD
+
+### ⚡ [BidFlow — Real-Time Auction Marketplace](https://github.com/sangvirgo/BidFlow)
+
+**React · Node.js · Express.js · TypeScript · MongoDB · Redis · BullMQ · Socket.IO**
+
+A full-stack auction marketplace supporting seller, bidder, and administrator workflows.
+
+- Implemented concurrency-safe bidding using MongoDB atomic updates, transactions, and idempotency keys.
+- Built real-time bidding updates, auction scheduling, anti-sniping extensions, and background jobs.
+- Developed payment webhook handling, orders, notifications, disputes, and audit workflows.
+
+**Focus:** Full-stack Development · Real-time Systems · Concurrency · Background Jobs
+
+### ☕ [SmartVN — E-Commerce Microservices Platform](https://github.com/sangvirgo/microservice-smartVN)
+
+**Java · Spring Boot · Spring Cloud · Redis · MySQL · React · Docker**
+
+An e-commerce microservices platform covering authentication, product catalog, inventory, shopping cart, orders, payments, and administration.
+
+- Implemented OAuth2, JWT, OTP, VNPay integration, service discovery, and Resilience4j fallbacks.
+- Applied Redis cache-aside and measured **5.5× faster average response time** in a local cached-versus-uncached k6 test with 100 virtual users and 0% failures.
+
+**Focus:** Java Backend · Microservices · Caching · Resilience
+
+### 🍔 [QuickFood — Food Delivery Platform](https://github.com/sangvirgo/quickfood)
+
+**Java · Spring Boot · PostgreSQL · PostGIS · Next.js · Docker · GitHub Actions**
+
+An end-to-end food delivery platform supporting customers, restaurant staff, and delivery drivers.
+
+- Developed REST APIs, authentication, role-specific workflows, and order lifecycle management.
+- Implemented location-aware features with PostGIS and concurrent order acceptance logic.
+- Built a Docker-based deployment workflow with **5 container images** and **20+ automated deployments**.
+
+**Focus:** Full-stack Development · Database Design · CI/CD · Deployment
+
+### 🤖 [KilnFlow — AI-Assisted Manufacturing Workflow](https://github.com/sangvirgo/kilnflow)
+
+**NestJS · Next.js · LLMs · RAG · Vector Search · AI Agents**
+
+An AI-assisted manufacturing workflow system for interpreting orders, estimating production requirements, and supporting operational planning.
+
+- Designed an AI workflow with **1 orchestrator and 5 specialized agents**.
+- Implemented Vietnamese order parsing, production estimation, scheduling, risk/QC analysis, and knowledge retrieval.
+- Used RAG, embeddings, vector search, structured validation, self-correction retries, and deterministic fallbacks.
+
+**Focus:** AI Agents · RAG · LLM Orchestration · Workflow Automation
 
 ---
 
-## Certification
+## 🎓 Education
 
-**TOEIC Listening & Reading — 810 / 990**  
-ETS
+**Posts and Telecommunications Institute of Technology**
 
----
+Bachelor of Science in Information Technology  
+**2022 – Present**
 
-## Development Workflow
+- **GPA:** 3.45 / 4.00
+- **Academic Excellence Scholarship:** 3 consecutive semesters
 
-I use **Claude Code**, **OpenAI Codex**, and **ChatGPT** to support repository investigation, implementation planning, debugging, code review, and technical documentation.
+### Certification
 
-AI-assisted tools support my workflow but do not replace technical understanding, source-code review, or manual verification.
-
----
-
-## Current Interests
-
-- Backend engineering
-- REST API design
-- Authentication and authorization
-- Database transactions and concurrency
-- Real-time application workflows
-- Messaging and background jobs
-- Dockerized application delivery
+**TOEIC Listening & Reading — 810 / 990**
 
 ---
 
-<p align="center">
-  Open to Software Engineer, Backend Engineer, and Full-Stack Engineer
-  intern or fresher opportunities.
-</p>
+## 🎯 Current Focus
 
-<p align="center">
-  <a href="mailto:tansang06092004@gmail.com">
-    tansang06092004@gmail.com
-  </a>
-</p>
+I'm continuously strengthening my skills in:
+
+- **Backend Engineering:** System design, REST API architecture, authentication, authorization, and database optimization.
+- **Distributed Systems:** Messaging, concurrency, transactions, caching, and reliable background processing.
+- **Software Quality:** Testing, debugging, maintainability, and clean architecture.
+- **Cloud & DevOps:** Docker, CI/CD, deployment workflows, and cloud platforms.
+- **AI-assisted Engineering:** Coding agents, Agent Skills, MCP, and practical AI-powered development workflows.
+
+---
+
+<div align="center">
+
+### Let's Connect!
+
+I'm open to opportunities in **Software Engineering, Backend Development, and Full-stack Development**.
+
+Interested in building useful software, solving engineering problems, and learning from experienced teams.
+
+<br/>
+
+<a href="mailto:tansang.dev@gmail.com">
+  <img src="https://img.shields.io/badge/Get_in_Touch-334155?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact Me"/>
+</a>
+<a href="https://sangvirgo.github.io">
+  <img src="https://img.shields.io/badge/View_Portfolio-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/>
+</a>
+
+<br/><br/>
+
+<sub>Built with curiosity, continuous learning, and a passion for software engineering.</sub>
+
+</div>
